@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hr">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".APPApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppBaseTheme_Light">
+        <activity android:name=".ui.activity.MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.DayTabActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.AddressBookActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.AddAddressActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginInputTheme" />
+        <activity android:name=".ui.activity.RegisterActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.ReservationActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ImageTranslucentTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.SaveRegisterActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.RegRecordActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

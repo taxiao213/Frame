@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hr.ui.activity.MainActivity">
+    <com.hr.ui.view.TitleBarView
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/main_color"
+        app:titleText = "@string/home_name"
+        app:titleTextSize="18sp"
+        app:titleColor="@color/white" />
+
+    <RelativeLayout
+        android:id="@+id/hos_register"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="35%w"
+        app:layout_marginLeftPercent="10%w"
+        app:layout_marginTopPercent="10%w"
+        app:layout_widthPercent="35%w"
+        android:layout_below="@+id/titleBar"
+        android:background="@drawable/button_shape"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/doctor_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/role_doctor" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hospital_register"
+            android:textColor="@color/white"
+            android:layout_below="@+id/doctor_img" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/register_manager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="35%w"
+        app:layout_marginRightPercent="10%w"
+        app:layout_marginTopPercent="10%w"
+        app:layout_widthPercent="35%w"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/titleBar"
+        android:background="@drawable/button_shape"
+        android:gravity="center"
+        >
+        <ImageView
+            android:id="@+id/manager_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/role_manager"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mamager_register"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_below="@+id/manager_img"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/edit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="35%w"
+        app:layout_marginRightPercent="10%w"
+        app:layout_marginTopPercent="10%w"
+        app:layout_widthPercent="35%w"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/hos_register"
+        android:background="@drawable/button_shape"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/edit_img"
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:src="@mipmap/exit1" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/edit"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_below="@+id/edit_img"
+            android:layout_marginTop="15dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/search_register"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="35%w"
+        app:layout_marginLeftPercent="10%w"
+        app:layout_marginTopPercent="10%w"
+        app:layout_widthPercent="35%w"
+        android:layout_below="@+id/hos_register"
+        android:background="@drawable/button_shape"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/search_img"
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:src="@mipmap/icon_search" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/search_register"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_below="@+id/search_img"
+            android:layout_marginTop="16dp"/>
+    </RelativeLayout>
+</com.zhy.android.percent.support.PercentRelativeLayout>

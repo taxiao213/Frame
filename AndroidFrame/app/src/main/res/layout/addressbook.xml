@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <com.hr.ui.view.TitleBarView
+      android:id="@+id/titleBar"
+      android:layout_width="match_parent"
+      android:layout_height="44dp"
+      android:background="@color/main_color"
+      app:titleText = "@string/mail_list"
+      app:titleTextSize="18sp"
+      app:titleColor="@color/white"
+      app:leftBtnImage="@mipmap/btn_return"
+      app:leftTextColor="@color/white"
+      app:left_padding_left="12dp"
+      app:rightBtnImage="@mipmap/add_person"
+      app:right_padding_right="12dp"
+      />
+
+  <android.support.v7.widget.RecyclerView
+      android:id="@+id/addressbook_recyclerview"
+      android:layout_width="match_parent"
+      android:layout_height="0dip"
+      android:layout_weight="1"
+      />
+</LinearLayout>

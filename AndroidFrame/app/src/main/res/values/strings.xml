@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">HRMobileAndroidApp</string>
+    <string name="send_code_again">再次发送</string>
+    <string name="has_nothing">没有内容</string>
+    <string name="load_error_click_to_retry">重新加载</string>
+    <string name="home_name">郑大医院挂号系统</string>
+    <string name="ok">确定</string>
+    <string name="cancle">取消</string>
+    <string name="register_interface">注册界面</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="name_hint">请输入手机号</string>
+    <string name="password_hint">请输入密码</string>
+    <string name="password_confirm_hint">请确认密码</string>
+    <string name="user_name">用户名</string>
+    <string name="passward">密码</string>
+    <string name="hospital_register">门诊挂号</string>
+    <string name="edit">退出</string>
+    <string name="edit_tip">是否退出系统？</string>
+    <string name="mail_list">通讯录</string>
+    <string name="msg_press_again_quit">再按一次退出</string>
+    <string name="departement">科室</string>
+    <string name="search">搜索</string>
+    <string name="week_doc_register">一周医生挂号表</string>
+    <string name="mamager_register">管理通讯录</string>
+    <string name="search_register">预约信息查询</string>
+    <string name="register_record">挂号记录</string>
+    <string name="delete">删除</string>
+</resources>

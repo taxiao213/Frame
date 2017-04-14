@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppBaseTheme_Light" parent="Theme.AppCompat.Light.NoActionBar">
+    <!--<style name="AppBaseTheme_Light" parent="Theme.AppCompat.DayNight.NoActionBar">-->
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+
+        <!-- Actionbar color -->
+        <item name="colorPrimary">@color/main_color</item>
+        <!--&lt;!&ndash;Status bar color&ndash;&gt;-->
+        <item name="colorPrimaryDark">@color/main_color</item>
+
+        <!--Window color 窗口界面颜色-->
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+
+</resources>

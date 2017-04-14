@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--自定义标题栏-->
+    <declare-styleable name="Title_bar">
+        <attr name="titleText" format="string|reference"/>
+        <attr name="titleTextSize" format="dimension|reference"/>
+        <attr name="titleColor" format="color|reference"/>
+
+        <attr name="leftBtnText" format="string|reference"/>
+        <attr name="leftBtnTextSize" format="dimension|reference"/>
+        <attr name="leftBtnImage" format="reference"/>
+        <attr name="leftTextColor" format="color|reference"/>
+        <attr name="left_padding_left" format="dimension|reference"/>
+        <attr name="left_padding_right" format="dimension|reference"/>
+        <attr name="left_drawable_padding" format="dimension|reference"/>
+
+        <attr name="rightBtnText" format="string|reference"/>
+        <attr name="rightBtnTextSize" format="dimension|reference"/>
+        <attr name="rightTExtColor" format="color|reference"/>
+        <attr name="rightBtnImage" format="reference"/>
+        <attr name="right_padding_left" format="dimension|reference"/>
+        <attr name="right_padding_right" format="dimension|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="SwipeMenuLayout">
+        <attr name="leftViewId" format="reference" />
+        <attr name="rightViewId" format="reference" />
+        <attr name="contentViewId" format="reference" />
+    </declare-styleable>
+</resources>
